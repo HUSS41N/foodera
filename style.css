@@ -112,16 +112,25 @@ button{
 }
 .container{
     display: flex;
+    flex-wrap: wrap;
 }
 .img-container{
-    flex: 1;
+    /* flex: 1;
+    flex-shrink: 1;
+    flex-basis: 50rem; */
+    flex: 1 1 40rem;
+    /* flex: 1; */
 }
 .img-container img{
     width: 100%;
     border-radius: 20px;
 }
 .content-container{
+    /* flex: 1;
+    flex-shrink: 1;
+    flex-basis: 50rem; */
     flex: 1;
+    flex: 1 1 40rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -181,7 +190,7 @@ footer{
     color: #fff;
 }
 /* explore food */
-.container{
+.expolore-container{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -213,9 +222,24 @@ input{
     html{
         font-size: 45%;
     }
+    .hero{
+        width: 90%;
+    }
+    .about{
+        width: 90%;
+    }
 }
-@media only screen and (max-width: 500px)  {
+@media only screen and (max-width: 600px){
+    .nav-links{
+        display: none;
+    }
+    .logo img{
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 500px){
     html{
-        font-size: 35%;
+        font-size: 40%;
     }
 }
